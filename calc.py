@@ -42,7 +42,7 @@ print("cigarettes")
 
 print("")
 
-smokeMonth = 31 * smokeDay
+smokeMonth = 30 * smokeDay
 print("this means that every month you smoke effectivly:")
 print(smokeMonth)
 print("cigarettes")
