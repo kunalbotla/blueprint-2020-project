@@ -1,12 +1,13 @@
 aqi = 0.0
 pm = 0.0
-smoke = 0.0
+smokeDay = 0.0
+smokeWeek = 0.0
+smokeMonth = 0.0
 
 print("what is the air quality index where you are? (enter in aqi)")
 aqi = input ()
 print("")
 
-aqi/12
 
 
 if float(aqi) <= 50:
@@ -28,7 +29,26 @@ print("your PM2.5 (Particulate <2.5 microns) (in µg/m3) is:")
 print(pm)
 print("")
 
-smoke = pm/22
-print("this means that every day you are exposed to effectivly:")
-print(smoke)
+smokeDay = pm/22
+print("this means that every day you smoke effectivly:")
+print(smokeDay)
 print("cigarettes")
+
+print("")
+
+smokeWeek = 7*smokeDay
+print("this means that every week you smoke effectivly:")
+print(smokeWeek)
+print("cigarettes")
+
+print("")
+
+smokeMonth = 31*smokeDay
+print("this means that every month you smoke effectivly:")
+print(smokeMonth)
+print("cigarettes")
+
+print("")
+print("")
+print("")
+print("note:numbers are not 100% accurate")
