@@ -30,22 +30,19 @@ print("")
 
 smokeDay = pm / 22
 print("this means that every day you smoke effectivly:")
-print(smokeDay)
-print("cigarettes")
+print(smokeDay, "cigarettes")
 
 print("")
 
 smokeWeek = 7 * smokeDay
 print("this means that every week you smoke effectivly:")
-print(smokeWeek)
-print("cigarettes")
+print(smokeWeek, "cigarettes")
 
 print("")
 
 smokeMonth = 30 * smokeDay
 print("this means that every month you smoke effectivly:")
-print(smokeMonth)
-print("cigarettes")
+print(smokeMonth,  "cigarettes")
 
 print("")
 
