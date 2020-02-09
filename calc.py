@@ -49,6 +49,5 @@ print(smokeMonth)
 print("cigarettes")
 
 print("")
-print("")
-print("")
-print("note:numbers are not 100% accurate")
+
+print("note: numbers are not 100% accurate")
