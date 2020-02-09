@@ -6,10 +6,13 @@ print("what is the air quality index where you are? (enter in aqi)")
 aqi = input ()
 print("")
 
-if float(aqi) <= 12:
-    pm = 50
-elif float(aqi) <= 35.5:
-    pm = 100
+aqi/12
+
+
+if float(aqi) <= 50:
+    pm = 12
+elif float(aqi) <= 100:
+    pm = 35.5
 elif float(aqi) <= 150:
     pm = 55.5
 elif float (aqi) <= 200:
