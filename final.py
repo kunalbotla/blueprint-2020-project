@@ -74,11 +74,16 @@ print("")
 
 print("note: numbers are not 100% accurate")
 
+
+
+
+
+
+
 #final program
 from datetime import datetime
 now = datetime.now()
 hour = now.hour
-military = hour + 12
 from datetime import date
 today = date.today()
 day = today.day
@@ -86,14 +91,28 @@ month = today.month
 x = 9
 day_plus = int(day) + 0
 difference = day_plus - x
+
+def convert24(str1): 
+    if str1[-2:] == "AM" and str1[:2] == "12": 
+        return "00" + str1[2:-2]    
+    elif str1[-2:] == "AM": 
+        return str1[:-2]   
+    elif str1[-2:] == "PM" and str1[:2] == "12": 
+        return str1[:-2] 
+    else: 
+        return str(int(str1[:2]) + 12) + str1[2:8]        
+print(convert24("06:00:00 PM"))
+
 while day < 12:
 # different notification that will appear on user's phone each day in the morning
-  if hour < 12:
-    if hour == 6:
-    elif difference == 0:
-        print("Climate change may end the world in 2030.")
-        print("Bring your reusable water bottle to school or work today.")
-        a = input("Did you bring your reusable water bottle to school or work today?")
+
+ 
+=======
+  elif difference == 0:
+    print("Climate change may end the world in 2030.")
+    print("Make sure to bring your reusable water bottle to school or work today.")
+    a = input("Did you bring your reusable water bottle to school or work today?")
+>>>>>>> 936745e939d61364f45fb23c8a4fb488be5c646e
     if a == "yes":
         print("Great job!")
     elif difference == 1:
@@ -116,5 +135,13 @@ while day < 12:
         d = input("Did you use less heating and natural gas today?")
     if d == "yes":
         print("Thank you!")
-     
-  
+=======
+
+        #https://www.geeksforgeeks.org/python-program-convert-time-12-hour-24-hour-format/
+
+
+ 
+
+
+    
+>>>>>>> 936745e939d61364f45fb23c8a4fb488be5c646e
