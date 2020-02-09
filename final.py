@@ -112,7 +112,6 @@ while day < 12:
     print("Climate change may end the world in 2030.")
     print("Make sure to bring your reusable water bottle to school or work today.")
     a = input("Did you bring your reusable water bottle to school or work today?")
->>>>>>> 936745e939d61364f45fb23c8a4fb488be5c646e
     if a == "yes":
         print("Great job!")
     elif difference == 1:
@@ -139,9 +138,3 @@ while day < 12:
 
         #https://www.geeksforgeeks.org/python-program-convert-time-12-hour-24-hour-format/
 
-
- 
-
-
-    
->>>>>>> 936745e939d61364f45fb23c8a4fb488be5c646e
