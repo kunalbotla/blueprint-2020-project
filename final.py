@@ -106,8 +106,6 @@ print(convert24("06:00:00 PM"))
 while day < 12:
 # different notification that will appear on user's phone each day in the morning
 
- 
-=======
   elif difference == 0:
     print("Climate change may end the world in 2030.")
     print("Make sure to bring your reusable water bottle to school or work today.")
