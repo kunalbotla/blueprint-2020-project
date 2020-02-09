@@ -86,6 +86,7 @@ from datetime import date
 today = date.today()
 day = today.day
 month = today.month
+points = 0
 x = 9
 day_plus = int(day) 
 difference = day_plus - x
@@ -100,12 +101,13 @@ def convert24(str1):
         return str(int(str1[:2]) + 12) + str1[2:8]        
 x = convert24("06:00:00 AM")
 y = convert24("06:00:00 PM")
-# different notification that will appear on user's phone each day in the morning
+# different notification that will appear on user's phone each day in the morning. Using AI, we can figure out when typically the person checks his phone in the morning and in the night.
 if hour == x[1]:
   animals = 0
   if difference == 0:
     print("Climate change may end the world in 2030.")
     print("Make sure to bring your reusable water bottle to school or work today.")
+    points 
   elif difference == 1:
     print("Scientists predict that if the increase in greenhouse gas emissions continues unabated, temperatures will rise by as much as 10 degrees Fahrenheit by the end of this century.")
     print("Try not to use plastic today.")
@@ -121,17 +123,24 @@ if hour == y[0:2]:
     a = input("Did you bring your reusable water bottle to school or work today?")
     if a == "yes":
       print("Great job!")
+      points += 100
   elif difference == 1:
     b = input("Did you not use plastic today?")
     if b == "yes":
       print("That's great!")
+      points += 100
   elif difference == 2:
     c = input("Did you find an efficient way for transportation today?")
     if c == "yes":
       print("You are the best!")
+      points += 100
   elif difference == 3:
     d = input("Did you use less heating and natural gas today?")
     if d == "yes":
       print("Thank you!")
+      points += 100
+print(points)
 #https://www.geeksforgeeks.org/python-program-convert-time-12-hour-24-hour-format/
+# points will be connected to a sponsore which will give a reward when the user reaches a certain amount of points(for motivation)
+
 
