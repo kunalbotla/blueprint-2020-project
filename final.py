@@ -78,6 +78,8 @@ print("note: numbers are not 100% accurate")
 
 
 
+
+
 #final program
 from datetime import datetime
 now = datetime.now()
@@ -100,7 +102,7 @@ def convert24(str1):
     else: 
         return str(int(str1[:2]) + 12) + str1[2:8]        
 x = convert24("06:00:00 AM")
-y = convert24("06:00:00 PM")
+y = convert24("04:00:00 PM")
 # different notification that will appear on user's phone each day in the morning. Using AI, we can figure out when typically the person checks his phone in the morning and in the night.
 if hour == x[1]:
   animals = 0
@@ -117,7 +119,7 @@ if hour == x[1]:
   elif difference == 3:
     print("Global warming may also lead to extreme weather other than cold or heat extremes.")
     print("Use less heating and natural gas today")
-if hour == y[0:2]:
+if int(hour) == int(y[0:2]):
   animals = 1
   if difference == 0:
     a = input("Did you bring your reusable water bottle to school or work today?")
@@ -142,5 +144,3 @@ if hour == y[0:2]:
 print("Score:" , points)
 #https://www.geeksforgeeks.org/python-program-convert-time-12-hour-24-hour-format/
 # points will be connected to a sponsore which will give a reward when the user reaches a certain amount of points(for motivation)
-
-
