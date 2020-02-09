@@ -139,7 +139,7 @@ if hour == y[0:2]:
     if d == "yes":
       print("Thank you!")
       points += 100
-print(points)
+print("Score:" , points)
 #https://www.geeksforgeeks.org/python-program-convert-time-12-hour-24-hour-format/
 # points will be connected to a sponsore which will give a reward when the user reaches a certain amount of points(for motivation)
 
