@@ -78,8 +78,6 @@ print("note: numbers are not 100% accurate")
 
 
 
-
-
 #final program
 from datetime import datetime
 now = datetime.now()
@@ -89,9 +87,8 @@ today = date.today()
 day = today.day
 month = today.month
 x = 9
-day_plus = int(day) + 0
+day_plus = int(day) 
 difference = day_plus - x
-
 def convert24(str1): 
     if str1[-2:] == "AM" and str1[:2] == "12": 
         return "00" + str1[2:-2]    
@@ -103,39 +100,38 @@ def convert24(str1):
         return str(int(str1[:2]) + 12) + str1[2:8]        
 x = convert24("06:00:00 AM")
 y = convert24("06:00:00 PM")
-
 # different notification that will appear on user's phone each day in the morning
-if hour == x:
+if hour == x[1]:
   animals = 0
-elif difference == 0:
-  print("Climate change may end the world in 2030.")
-  print("Make sure to bring your reusable water bottle to school or work today.")
-elif difference == 1:
-  print("Scientists predict that if the increase in greenhouse gas emissions continues unabated, temperatures will rise by as much as 10 degrees Fahrenheit by the end of this century.")
-  print("Try not to use plastic today.")
-elif difference == 2:
-  print("The ocean absorbs approximately 26% of the CO2 added to the atmosphere from human activities each year.")
-  print("Try to find a efficient way for transportation today.")
-elif difference == 3:
-  print("Global warming may also lead to extreme weather other than cold or heat extremes.")
-  print("Use less heating and natural gas today")
-if hour == y:
+  if difference == 0:
+    print("Climate change may end the world in 2030.")
+    print("Make sure to bring your reusable water bottle to school or work today.")
+  elif difference == 1:
+    print("Scientists predict that if the increase in greenhouse gas emissions continues unabated, temperatures will rise by as much as 10 degrees Fahrenheit by the end of this century.")
+    print("Try not to use plastic today.")
+  elif difference == 2:
+    print("The ocean absorbs approximately 26% of the CO2 added to the atmosphere from human activities each year.")
+    print("Try to find a efficient way for transportation today.")
+  elif difference == 3:
+    print("Global warming may also lead to extreme weather other than cold or heat extremes.")
+    print("Use less heating and natural gas today")
+if hour == y[0:2]:
   animals = 1
-elif difference == 0:
-  a = input("Did you bring your reusable water bottle to school or work today?")
-  if a == "yes":
-    print("Great job!")
-elif difference == 1:
-  b = input("Did you not use plastic today?")
-  if b == "yes":
-    print("That's great!")
-elif difference == 2:
-  c = input("Did you find an efficient way for transportation today?")
-  if c == "yes":
-    print("You are the best!")
-elif difference == 3:
-  d = input("Did you use less heating and natural gas today?")
-  if d == "yes":
-    print("Thank you!")
+  if difference == 0:
+    a = input("Did you bring your reusable water bottle to school or work today?")
+    if a == "yes":
+      print("Great job!")
+  elif difference == 1:
+    b = input("Did you not use plastic today?")
+    if b == "yes":
+      print("That's great!")
+  elif difference == 2:
+    c = input("Did you find an efficient way for transportation today?")
+    if c == "yes":
+      print("You are the best!")
+  elif difference == 3:
+    d = input("Did you use less heating and natural gas today?")
+    if d == "yes":
+      print("Thank you!")
 #https://www.geeksforgeeks.org/python-program-convert-time-12-hour-24-hour-format/
 
