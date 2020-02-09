@@ -133,5 +133,6 @@ if hour == y[0:2]:
     d = input("Did you use less heating and natural gas today?")
     if d == "yes":
       print("Thank you!")
+
 #https://www.geeksforgeeks.org/python-program-convert-time-12-hour-24-hour-format/
 
